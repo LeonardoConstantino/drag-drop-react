@@ -1,0 +1,18 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: 
+    repeating-linear-gradient(
+        to right,
+        transparent 0 50px, 
+        rgba(255, 255, 255, 0.06) 50px 51px
+    ),
+    repeating-linear-gradient(
+        to bottom,
+        transparent 0 50px, 
+        rgba(255, 255, 255, 0.06) 50px 51px
+    );
+    position: relative;
+    transition: top left 5s;
+}
