@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { Icon } from './icon'
 
 /**
@@ -25,11 +26,25 @@ import { Icon } from './icon'
  *   noteColor="#ff0000"
  * />
  */
-export const Button = ({ handle, args, className, icon, noteColor }) => {
+export const Button = ({
+  handle,
+  args,
+  icon,
+  className = '',
+  noteColor = '',
+}) => {
   const handleOnClick = (e) => handle(...args, e)
   return (
     <button className={className} onClick={handleOnClick}>
       <Icon iconUrl={icon} className={className} backgroundColor={noteColor} />
     </button>
   )
+}
+
+Button.propTypes = {
+  handle: PropTypes.func.isRequired, // handle deve ser uma função obrigatória
+  args: PropTypes.array.isRequired, // args deve ser um array obrigatório
+  className: PropTypes.string, // className é uma string opcional
+  icon: PropTypes.string.isRequired, // icon deve ser uma string obrigatória
+  noteColor: PropTypes.string, // noteColor é uma string opcional
 }

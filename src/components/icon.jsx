@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { getContrastColor } from '../utils/helpers.js'
 
 /**
@@ -17,7 +18,7 @@ import { getContrastColor } from '../utils/helpers.js'
  *   noteColor="#ff0000"
  * />
  */
-export const Icon = ({ iconUrl, className, backgroundColor }) => {
+export const Icon = ({ iconUrl, className = '', backgroundColor = '' }) => {
   return (
     <i
       className={className}
@@ -27,4 +28,10 @@ export const Icon = ({ iconUrl, className, backgroundColor }) => {
       }}
     ></i>
   )
+}
+
+Icon.propTypes = {
+  iconUrl: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  backgroundColor: PropTypes.string,
 }

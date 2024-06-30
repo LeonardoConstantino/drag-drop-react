@@ -28,7 +28,7 @@ export const useDrag = (listNotes, updateListNotes) => {
       listNotes,
       updateListNotes
     ),
-    [isDragging, cursor, positionCurrentNote, listNotes]
+    [isDragging, cursor, positionCurrentNote, listNotes, updateListNotes]
   )
 
   const handleEndInteraction = endInteraction(

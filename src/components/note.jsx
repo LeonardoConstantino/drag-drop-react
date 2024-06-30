@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { storageUtil } from '../utils/storageUtil.js'
 import { STORAGE_KEY } from '../utils/constants.js'
 import { Button } from './button.jsx'
@@ -109,3 +110,24 @@ export const Note = ({
     </div>
   )
 }
+
+Note.propTypes = {
+  note: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    top: PropTypes.number.isRequired,
+    left: PropTypes.number.isRequired,
+    zIndex: PropTypes.number,
+    color: PropTypes.string.isRequired,
+    cursor: PropTypes.string,
+    contente: PropTypes.string,
+  }).isRequired,
+  removeItem: PropTypes.func.isRequired,
+  isDragging: PropTypes.bool,
+  isCentralizing: PropTypes.bool,
+  handleInputContent: PropTypes.func.isRequired,
+  handleStartInteraction: PropTypes.func.isRequired,
+  handleMoveInteraction: PropTypes.func.isRequired,
+  handleEndInteraction: PropTypes.func.isRequired,
+  handleMoveLayerUp: PropTypes.func.isRequired,
+  handleMoveLayerdown: PropTypes.func.isRequired,
+};
