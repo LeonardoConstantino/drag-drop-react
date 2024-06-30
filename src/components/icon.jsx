@@ -1,12 +1,29 @@
-import { getContrastColor } from './../utils/helpers';
+import { getContrastColor } from '../utils/helpers.js'
 
-export const Icon = ({ iconUrl, className, noteColor }) => {
+/**
+ * Componente de ícone.
+ *
+ * @param {Object} props - Propriedades do componente.
+ * @param {string} props.iconUrl - URL da imagem de ícone.
+ * @param {string} props.className - Classe CSS para estilização do ícone.
+ * @param {string} props.noteColor - Cor associada ao ícone.
+ * @returns {JSX.Element} - Elemento de ícone renderizado com a imagem e estilos aplicados.
+ *
+ * @example
+ * // Exemplo de uso:
+ * <Icon
+ *   iconUrl="/path/to/icon.png"
+ *   className="icon-class"
+ *   noteColor="#ff0000"
+ * />
+ */
+export const Icon = ({ iconUrl, className, backgroundColor }) => {
   return (
     <i
       className={className}
-      style={{ 
+      style={{
         backgroundImage: `url("${iconUrl}")`,
-        '--shadow-color': noteColor && getContrastColor(noteColor)
+        '--shadow-color': backgroundColor && getContrastColor(backgroundColor),
       }}
     ></i>
   )

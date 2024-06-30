@@ -1,18 +1,16 @@
-main{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-image: 
-    repeating-linear-gradient(
-        to right,
-        transparent 0 50px, 
-        rgba(255, 255, 255, 0.06) 50px 51px
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0 3.125rem,
+      rgba(255, 255, 255, 0.06) 3.125rem 3.1875rem
     ),
     repeating-linear-gradient(
-        to bottom,
-        transparent 0 50px, 
-        rgba(255, 255, 255, 0.06) 50px 51px
+      to bottom,
+      transparent 0 3.125rem,
+      rgba(255, 255, 255, 0.06) 3.125rem 3.1875rem
     );
-    position: relative;
-    transition: top left 5s;
+  position: relative;
 }

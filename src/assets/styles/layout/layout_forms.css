@@ -2,35 +2,30 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 10px; */
-  /* position: relative; */
-  margin: 5px 10px;
+  padding: 0.3rem 0.6rem;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(0.125rem);
+  -webkit-backdrop-filter: blur(0.125rem);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.18);
 }
 
 form .add {
-  background-color: #eee;
   width: max-content;
-  padding: 5px;
-  /* margin: 10px; */
-  border-radius: 24px;
+  padding: 0.3rem;
   display: flex;
-  gap: 12px;
-  /* position: absolute;
-  left: 0px; */
+  gap: 0.3rem;
 }
 
-form .add input,
-button {
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  border: none;
+form .add input {
+  width: 2rem;
+  height: 2rem;
   background-color: transparent;
-  font-size: large;
+  border: none;
   cursor: pointer;
+  transition: transform 250ms;
 }
 
-form p.info{
+form p.info {
   font-size: large;
   font-weight: 600;
   color: #888888;
@@ -38,8 +33,15 @@ form p.info{
 
 form .add input::-webkit-color-swatch-wrapper {
   padding: 0;
+  border: none;
 }
 
 form .add input::-webkit-color-swatch {
   border-radius: 50%;
+  border: none;
+}
+
+form .add input:hover {
+  padding: 0px;
+  transform: scale(1.1);
 }
