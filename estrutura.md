@@ -1,5 +1,66 @@
 # Explicação da Estrutura
 
+### Estrutura atual do projeto
+
+```
+    📦drag-drop-react
+    ┣ 📂src
+    ┃ ┣ 📂assets
+    ┃ ┃ ┣ 📂images
+    ┃ ┃ ┃ ┣ 📜downLayer.svg
+    ┃ ┃ ┃ ┣ 📜favicon.ico
+    ┃ ┃ ┃ ┣ 📜HorizontalAlignCenter.svg
+    ┃ ┃ ┃ ┣ 📜Plus.svg
+    ┃ ┃ ┃ ┣ 📜print.png
+    ┃ ┃ ┃ ┣ 📜remove.svg
+    ┃ ┃ ┃ ┣ 📜representacao.jpg
+    ┃ ┃ ┃ ┗ 📜upLayer.svg
+    ┃ ┃ ┗ 📂styles
+    ┃ ┃ ┃ ┣ 📂base
+    ┃ ┃ ┃ ┃ ┣ 📜_reset.css
+    ┃ ┃ ┃ ┃ ┗ 📜_typography.css
+    ┃ ┃ ┃ ┣ 📂components
+    ┃ ┃ ┃ ┃ ┣ 📜_icon.css
+    ┃ ┃ ┃ ┃ ┗ 📜_note.css
+    ┃ ┃ ┃ ┣ 📂layout
+    ┃ ┃ ┃ ┃ ┣ 📜layout_body.css
+    ┃ ┃ ┃ ┃ ┣ 📜layout_forms.css
+    ┃ ┃ ┃ ┃ ┗ 📜layout_main.css
+    ┃ ┃ ┃ ┣ 📂utils
+    ┃ ┃ ┃ ┃ ┗ 📜utils_helpers.css
+    ┃ ┃ ┃ ┗ 📜main.css
+    ┃ ┣ 📂components
+    ┃ ┃ ┣ 📜button.jsx
+    ┃ ┃ ┣ 📜icon.jsx
+    ┃ ┃ ┗ 📜note.jsx
+    ┃ ┣ 📂hooks
+    ┃ ┃ ┣ 📜useColor.js
+    ┃ ┃ ┣ 📜useDrag.js
+    ┃ ┃ ┣ 📜useNotes.js
+    ┃ ┃ ┗ 📜useNotesList.js
+    ┃ ┣ 📂services
+    ┃ ┃ ┣ 📜handleButtonClick.js
+    ┃ ┃ ┣ 📜handleDrag.js
+    ┃ ┃ ┣ 📜handleLayers.js
+    ┃ ┃ ┗ 📜handleTextarea.js
+    ┃ ┣ 📂utils
+    ┃ ┃ ┣ 📜constants.js
+    ┃ ┃ ┣ 📜helpers.js
+    ┃ ┃ ┗ 📜storageUtil.js
+    ┃ ┣ 📜App.jsx
+    ┃ ┗ 📜main.jsx
+    ┣ 📜.eslintrc.cjs
+    ┣ 📜.gitattributes
+    ┣ 📜.gitignore
+    ┣ 📜estrutura.md
+    ┣ 📜index.html
+    ┣ 📜LICENSE.txt
+    ┣ 📜package-lock.json
+    ┣ 📜package.json
+    ┣ 📜README.md
+    ┗ 📜vite.config.js
+```
+
 | pasta/arquivo | conteúdo |
 |:---:|:---|
 | components/ | Contém componentes reutilizáveis que podem ser usados em várias partes da aplicação. |
@@ -10,6 +71,8 @@
 | assets/ | Contém recursos estáticos como imagens, estilos e fontes. |
 | index.html | O ponto de entrada principal da aplicação. |
 | main.js | O arquivo JavaScript principal que importa e inicializa os módulos necessários. |
+
+### Estrutura desejada
 
 ```
 |– drag-drop-react/

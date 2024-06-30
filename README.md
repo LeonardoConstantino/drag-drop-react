@@ -6,7 +6,13 @@
 
 ## Descrição
 
-Aplicativo de notas, tipo post-it. feito em react
+Aplicativo de notas, tipo post-it. feito em React.
+
+## Imagem do projeto
+
+<div align='center'>
+    <img src='https://raw.githubusercontent.com/LeonardoConstantino/drag-drop-react/master/src/assets/images/print.png' alt='Sample screenshot' width='400'>
+</div>
 
 ## Instalação
 
@@ -55,7 +61,7 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](https
 Autor: Leonardo H. Constantino
 
 ## 🌐 Referências
-Inspirado por esse repositório: [HoanghoDev / drag-drop-js](https://github.com/HoanghoDev/drag-drop-js/blob/main/app.js)
+Inspirado por esse repositório: [HoanghoDev / drag-drop-js](https://github.com/HoanghoDev/drag-drop-js/tree/main)
 
 ## Badges e Imagens
 
@@ -90,7 +96,6 @@ Inspirado por esse repositório: [HoanghoDev / drag-drop-js](https://github.com/
 </div>
 
 <div align='center'>
-    <img src='https://raw.githubusercontent.com/LeonardoConstantino/drag-drop-react/master/src/assets/images/print.png' alt='Sample screenshot' width='400'>
     <img src='https://raw.githubusercontent.com/LeonardoConstantino/drag-drop-react/master/src/assets/images/representacao.jpg' alt='Sample screenshot' width='400'>
 </div>
 
